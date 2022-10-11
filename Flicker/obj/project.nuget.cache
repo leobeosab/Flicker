@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jURgLRGaF1m+nTwnvACP9stpEmBJ0/tAFMUQCj1vhTHR4E6E4rIuasArpeN2dRJKLWhpr9JgYZSiseoe9SsP4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\boond\\RiderProjects\\Flicker\\Flicker\\Flicker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\boond\\.nuget\\packages\\hardcodet.notifyicon.wpf\\1.1.0\\hardcodet.notifyicon.wpf.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
