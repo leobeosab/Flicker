@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flicker", "Flicker\Flicker.csproj", "{AC3C0008-0A91-49D3-9988-9831A1BD01DC}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flicker", "Flicker\Flicker.csproj", "{AC3C0008-0A91-49D3-9988-9831A1BD01DC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FlickerSetup", "FlickerSetup\FlickerSetup.vdproj", "{B2C17E67-596D-4F5B-A12F-7F9579FF16EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,14 @@ Global
 		{AC3C0008-0A91-49D3-9988-9831A1BD01DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC3C0008-0A91-49D3-9988-9831A1BD01DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC3C0008-0A91-49D3-9988-9831A1BD01DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2C17E67-596D-4F5B-A12F-7F9579FF16EF}.Debug|Any CPU.ActiveCfg = Release
+		{B2C17E67-596D-4F5B-A12F-7F9579FF16EF}.Debug|Any CPU.Build.0 = Release
+		{B2C17E67-596D-4F5B-A12F-7F9579FF16EF}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6F04970-5C68-4936-9D42-3D3F60746CED}
 	EndGlobalSection
 EndGlobal

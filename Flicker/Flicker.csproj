@@ -5,6 +5,10 @@
         <TargetFramework>net6.0-windows</TargetFramework>
         <Nullable>enable</Nullable>
         <UseWPF>true</UseWPF>
+        <StartupObject>Flicker.App</StartupObject>
+        <IsPublishable>False</IsPublishable>
+        <ProduceReferenceAssembly>False</ProduceReferenceAssembly>
+        <SignAssembly>False</SignAssembly>
     </PropertyGroup>
 
     <ItemGroup>

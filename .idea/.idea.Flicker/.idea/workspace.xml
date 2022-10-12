@@ -4,7 +4,15 @@
     <projectFile>Flicker/Flicker.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45986287-bfd6-48eb-bd2b-b7ddd21f72c7" name="Changes" comment="" />
+    <list default="true" id="45986287-bfd6-48eb-bd2b-b7ddd21f72c7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Flicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Flicker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flicker/KeyboardHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Flicker/KeyboardHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flicker/obj/Debug/net6.0-windows/App.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Flicker/obj/Debug/net6.0-windows/App.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flicker/obj/Debug/net6.0-windows/MainWindow.g.i.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Flicker/obj/Debug/net6.0-windows/MainWindow.g.i.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flicker/obj/Flicker.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Flicker/obj/Flicker.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flicker/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Flicker/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Flicker/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Flicker/obj/project.nuget.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +43,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Publish to folder.Publish Flicker to folder">
+    <configuration name="Publish Flicker to folder" type="DotNetFolderPublish" factoryName="Publish to folder">
+      <riderPublish configuration="Release" delete_existing_files="true" include_native_libs_for_self_extract="true" platform="Any CPU" produce_single_file="true" ready_to_run="true" runtime="win-x64" target_folder="$PROJECT_DIR$/Flicker/bin/Release/net6.0-windows/win-x64/publish" target_framework="net6.0-windows" uuid_high="-6035949366046275117" uuid_low="-7383484250139590180" />
+      <method v="2" />
+    </configuration>
     <configuration name="Flicker" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -65,13 +77,26 @@
       <updated>1665450800455</updated>
       <workItem from="1665450803213" duration="191000" />
       <workItem from="1665452592650" duration="8971000" />
+      <workItem from="1665556107821" duration="519000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
@@ -80,13 +105,13 @@
       <breakpoints>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Flicker/KeyboardHandler.cs</url>
-          <line>88</line>
+          <line>93</line>
           <properties documentPath="C:\Users\boond\RiderProjects\Flicker\Flicker\KeyboardHandler.cs" initialLine="64" containingFunctionPresentation="method 'HookCallback'">
             <startOffsets>
-              <option value="2629" />
+              <option value="2795" />
             </startOffsets>
             <endOffsets>
-              <option value="2683" />
+              <option value="2849" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />

@@ -1,8 +1,13 @@
-﻿using System;
+﻿/*
+ * Most of this code was ripped off of Stephen Toub's Article found here
+ * https://learn.microsoft.com/en-us/archive/blogs/toub/low-level-keyboard-hook-in-c
+ * Thanks Stephen!
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Flicker;
