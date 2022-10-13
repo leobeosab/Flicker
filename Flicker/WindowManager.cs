@@ -19,6 +19,9 @@ public class WindowManager
    [DllImport("user32.dll", EntryPoint = "SetWindowPos")]
    public static extern IntPtr SetWindowPos(IntPtr hWnd, int hWndInsertAfter, int x, int Y, int cx, int cy, int wFlags);
 
+   [DllImport("user32.dll")]
+   public static extern bool ShowWindow(IntPtr hWnd, int flags);
+
 
    private string GetWindowTitle(IntPtr windowHandle)
    {
@@ -38,12 +41,19 @@ public class WindowManager
       return Screen.FromHandle(hwnd);
    }
 
+   private void UnMinWindow(IntPtr hWnd)
+   {
+      const int SW_RESTORE = 9;
+      ShowWindow(hWnd, SW_RESTORE);
+   }
+
    private void SetWindowSize(double x, double y, double widthPercent, double heightPercent)
    {
       const short SWP_NOMOVE = 0X2;
       const short SWP_NOSIZE = 1;
       const short SWP_NOZORDER = 0X4;
       const int SWP_SHOWWINDOW = 0x0040;
+      const short SWP_FRAMECHANGED = 0x0020;
       
       var handle = GetForegroundWindow();
       var screen = GetScreenSize(handle);
@@ -59,13 +69,21 @@ public class WindowManager
       if (handle != IntPtr.Zero)
       {
          Debug.WriteLine($"Modifying window {GetWindowTitle(handle)}");
-         int flags = SWP_NOZORDER | SWP_SHOWWINDOW;
+         int flags = SWP_NOZORDER | SWP_SHOWWINDOW | SWP_FRAMECHANGED;
          if (widthPercent == 0 || heightPercent == 0)
          {
             flags |= SWP_NOSIZE;
          }
+
+         int xPos = (int)Math.Floor(width * x) + boundsX;
+         int yPos = (int)Math.Floor(height * y) + boundsY;
+         int windowWidth = (int)Math.Ceiling(widthPercent * width);
+         int windowHeight = (int) Math.Ceiling(height * heightPercent);
          
-         SetWindowPos(handle, 0, (int)Math.Floor(width * x) + boundsX, (int)Math.Floor(height * y) + boundsY, (int)Math.Ceiling(widthPercent * width), (int) Math.Ceiling(height * heightPercent), flags);
+         Debug.WriteLine($"X: {xPos} Y: {yPos} Width: {windowWidth} Height: {windowHeight}");
+         
+         UnMinWindow(handle);
+         SetWindowPos(handle, 0, xPos, yPos, windowWidth, windowHeight, flags);
       }
    }
 
